@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Asegura tu hogar, moto, familia y más con Seguro del Norte. Ofrecemos una amplia gama de planes de seguro diseñados para adaptarse a tus necesidades individuales.">
+  <meta name="keywords" content="seguro, hogar, moto, familia, vida, viaje, trabajo, seguridad, protección">
+  <meta name="author" content="Santiago Altamiranda, Chipolari lucas,Jose Lobo y Carla Chediac">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+  <link rel="shortcut icon" href="../Images/OIG4.png" type="image/png">
+  <link rel="stylesheet" href="../Stylesheets/complete.css">
+  <link rel="stylesheet" href="../Stylesheets/sobreNosotros.css">
+  <script src="https://kit.fontawesome.com/d0041885e5.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Inicio</title>
+</head>
+<body class="body-index">
+    <header>
+        <nav class="navbar navbar-expand-lg colores fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"> <img src="../Images/OIG4.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center "></a>
+                <button class="navbar-toggler activo" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a href="../index.html">Inicio <span class="sp"></span></a>
+                        <a href="./opciones.html">¿Que aseguramos?<span class="sp"></span></a>
+                        <a href="./contacto.html">Contacto<span span class="sp"></span></a>
+                        <a href="#" class="activo">Sobre nosotros<span class="sp"></span></a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            Iniciar Sesión<span class="sp"></span>
+                        </a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#registroModal">
+                            Registrarse<span class="sp"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-bg text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registroModalLabel">Registrarse</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="../Images/Designer (40).jpeg" class="img-registrarse" alt="Imagen">
+                        </div>
+                        <div class="col-md-8">
+                            <form id="registroForm">
+                            
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="nombre" class="form-label">Nombre</label>
+                                            <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="usuario" class="form-label">Usuario</label>
+                                            <input type="text" class="form-control" id="usuario" placeholder="Usuario" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Correo Electrónico</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Correo Electrónico" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="apellido" class="form-label">Apellido</label>
+                                            <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="password" class="form-label">Contraseña</label>
+                                            <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+                                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirmar Contraseña" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-color">Registrarse</button>
+                                </div>
+                            </form>
+                            <div class="mt-3 text-center">
+                                <p>¿Ya tienes una cuenta? <a href="#loginModal" data-bs-toggle="modal" class="text-primary" data-bs-dismiss="modal">Iniciar Sesión</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-bg text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Inicio de Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+          
+                <div class="modal-body">
+                    <div class="row p-2">
+                        
+                        <div class="col-lg-6 d-flex align-items-center bg-img"></div>
+                        
+                        <div class="col-lg-6">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Correo Electrónico" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="remember">
+                                    <label class="form-check-label" for="remember">Recordar</label>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-color">Iniciar Sesión</button>
+                                </div>
+                                
+                                <div class="mt-3 text-center">
+                                    <button type="button" class="btn btn-outline-danger btn-block"><i class="fab fa-google"></i> Iniciar con Google</button>
+                                    <button type="button" class="btn btn-outline-primary btn-block"><i class="fab fa-facebook"></i> Iniciar con Facebook</button>
+                                </div>
+                            </form>
+                            
+                            <div class="mt-3 text-center">
+                                <p >¿No tienes una cuenta? <a href="#">Registrarse</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="grupo">
+        <div class="container">
+            <h1 class="text-center mt-2 color-title">Sobre Nosotros</h1>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 perfil text-center">
+                    <div class="img-box w-100">
+                        <div class="d-flex justify-content-center">
+                            <img src="../Images/lucas.jpg" class="">
+                            <ul>
+                                <a href="https://www.facebook.com/LUCCAPO/"><li><i class="fa fa-facebook"></i></li></a>
+                                <a href="https://www.instagram.com/lucas_chipo/"><li><i class="fa fa-instagram"></i></li></a>
+                                <a href="https://www.linkedin.com/in/lucas-chipolari-6660982a4/"><li><i class="fa fa-linkedin"></i></li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                     <h2>Chipolari Lucas</h2>
+                     <h3>Scrum Master</h3>
+                    </div>
+                     <p class="text-start p-4">Hola me llamo lucas chipolari, tengo 20 años y estudio en la universidad tecnologica nacional. Me encanta estudiar nuevas tecnologías.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 perfil text-center">
+                    <div class="img-box w-100">
+                            <img src="../Images/Jose.jpg" class="img-responsive">
+                        <ul>
+                            <a href="https://www.facebook.com/jrlobo1/"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="https://www.instagram.com/rol_you_rubik/"><li><i class="fa fa-instagram"></i></li></a>
+                            <a href="https://www.linkedin.com/in/jose-agustin-lobo/"><li><i class="fa fa-linkedin"></i></li></a>
+                        </ul>
+                    </div>
+                    <div class="">
+                    <div class="text-center">
+                        <h2>Lobo Jose</h2>
+                        <h3>Integrante</h3>
+                    </div>
+                    <p class="text-start p-4">José Lobo QA - Diplomado por la UTN, Telecom y eggEducacion, esclavizado en 4 horas que trabaja como si fueran 24hrs ( detesta la atencion al publico ) Si tengo 29 me conservo en formol</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 perfil text-center">
+                    <div class="img-box w-100">
+                        <img src="../Images/santi.jpg" class="img-responsive">
+                        <ul>
+                            <a href="./error404.html"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="https://www.instagram.com/santidecano1/"><li><i class="fa fa-instagram"></i></li></a>
+                            <a href="./error404.html"><li><i class="fa fa-linkedin"></i></li></a>
+                        </ul>
+                    </div>
+                    <div class="text-center">
+                     <h2>Altamiranda Santiago</h2>
+                     <h3>Integrante</h3>
+                    </div>
+                     <p class="text-center p-4">Tengo 26 años, estudiante y con muchas ganas de aprender.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 perfil text-center">
+                    <div class="img-box w-100">
+                        <img src="../Images/carla.jpeg" class="img-responsive">
+                        <ul>
+                            <a href="https://www.facebook.com/carla.chediac"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="https://www.instagram.com/carlitachediac?igsh=aW13eHMyMXFmb2Vy&utm_source=qr"><li><i class="fa fa-instagram"></i></li></a>
+                            <a href="https://www.linkedin.com/in/carlachediac1593?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><li><i class="fa fa-linkedin"></i></li></a>
+                        </ul>
+                    </div>
+                     <h2>Chediac Carla</h2>
+                     <h3>Integrante</h3>
+                     <p class="text-start p-4">Tengo 30 años. Soy Contadora Publica Nacional y actualmente vivo en España. Busco integrar las nuevas tecnologías a mi profesión.</p>
+                </div>
+
+            </div>
+            
+    </section>
+
+    <footer class="footer-bg mt-5">
+        <section class="container py-3 d-none d-md-block">
+            <div class="row">
+                <div class="col-12 col-md-3 mt-3 media-footer">
+                    <h2 class="text-light">Seguro del Norte</h2>
+                    <ul class="d-flex list-unstyled">
+                        <li class="p-2">
+                          <a
+                            href="https://www.facebook.com/"
+                            title="Facebook"
+                            ><i class="fa-brands fa-facebook icon-color"></i></svg></a>
+                        </li>
+                        <li class="p-2">
+                          <a
+                            href="https://www.instagram.com/"
+                            title="Instagram"
+                            ><i class="fa-brands fa-instagram icon-color"></i></a>
+                        </li>
+                        <li class="p-2">
+                          <a href="https://www.linkedin.com/"
+                            title="LinkedIn"><i class="fa-brands fa-linkedin icon-color"></i></a>
+                        </li>
+                        <li class="p-2">
+                          <a
+                            href="https://www.youtube.com/"
+                            title="YouTube"
+                            ><i class="fa-brands fa-youtube icon-color"></i></a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="col-3">
+                </div>
+                <div class="col-12 col-md-3 my-2">
+                    <ul class="nav flex-column">
+                        <h4 class="nav-footer-text">Nosotros</h4>
+                        <li class="nav-item ">
+                          <a class="p-0 icon-color" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="p-0 icon-color" href="./error404.html">Blog</a>
+                        </li>
+                        <li class="nav-item m-0">
+                          <a class="p-0 icon-color" href="./error404.html">Politicas de empresa</a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="col-12 col-md-3 my-2">
+                    <ul class="nav flex-column">
+                        <h4 class="nav-footer-text">Contacto</h4>
+                        <li class="nav-item ">
+                          <a class="p-0 icon-color" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="p-0 icon-color" href="./error404.html">Política de privacidad</a>
+                        </li>
+                        <li class="nav-item m-0">
+                          <a class="p-0 icon-color" href="./error404.html">Terminos y condiciones</a>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Asegura tu hogar, moto, familia y más con Seguro del Norte. Ofrecemos una amplia gama de planes de seguro diseñados para adaptarse a tus necesidades individuales.">
+  <meta name="keywords" content="seguro, hogar, moto, familia, vida, viaje, trabajo, seguridad, protección">
+  <meta name="author" content="Santiago Altamiranda, Chipolari lucas,Jose Lobo y Carla Chediac">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+  <link rel="shortcut icon" href="../Images/OIG4.png" type="image/png">
+  <link rel="stylesheet" href="../Stylesheets/complete.css">
+  <script src="https://kit.fontawesome.com/d0041885e5.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <title>Elegi el seguro de moto</title>
+</head>
+
+<body class="text-light body-index">
+  <header>
+    <nav class="navbar navbar-expand-lg colores fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"> <img src="../Images/OIG4.png" alt="Logo" class="d-inline-block align-text-center logo-btn"></a>
+            <button class="navbar-toggler activo" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a href="../index.html">Inicio <span class="sp"></span></a>
+                    <a href="#opciones">¿Que aseguramos?<span class="sp"></span></a>
+                    <a href="./contacto.html">Contacto<span span class="sp"></span></a>
+                    <a href="./sobreNosotros.html">Sobre nosotros<span class="sp"></span></a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Iniciar Sesión<span class="sp"></span>
+                    </a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#registroModal">
+                        Registrarse<span class="sp"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-bg text-light">
+          <div class="modal-header">
+              <h5 class="modal-title" id="registroModalLabel">Registrarse</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-4">
+                      <img src="./Images/Designer (40).jpeg" class="img-registrarse" alt="Imagen-gato">
+                  </div>
+                  <div class="col-md-8">
+                      <form id="registroForm">
+                      
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="mb-3">
+                                      <label for="nombre" class="form-label">Nombre</label>
+                                      <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="usuario" class="form-label">Usuario</label>
+                                      <input type="text" class="form-control" id="usuario" placeholder="Usuario" required>
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="email" class="form-label">Correo Electrónico</label>
+                                      <input type="email" class="form-control" id="email" placeholder="Correo Electrónico" required>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="mb-3">
+                                      <label for="apellido" class="form-label">Apellido</label>
+                                      <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="password" class="form-label">Contraseña</label>
+                                      <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+                                      <input type="password" class="form-control" id="confirmPassword" placeholder="Confirmar Contraseña" required>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <div class="d-flex justify-content-center">
+                              <button type="submit" class="btn btn-color">Registrarse</button>
+                          </div>
+                      </form>
+                      <div class="mt-3 text-center">
+                          <p>¿Ya tienes una cuenta? <a href="#loginModal" data-bs-toggle="modal" class="text-primary" data-bs-dismiss="modal">Iniciar Sesión</a></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content modal-bg text-light">
+           
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Inicio de Sesión</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+      
+            <div class="modal-body">
+                <div class="row p-2">
+                    
+                    <div class="col-lg-6 d-flex align-items-center bg-img"></div>
+                    
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="Correo Electrónico" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="remember">
+                                <label class="form-check-label" for="remember">Recordar</label>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-color">Iniciar Sesión</button>
+                            </div>
+                            
+                            <div class="mt-3 text-center">
+                                <button type="button" class="btn btn-outline-danger btn-block"><i class="fab fa-google"></i> Iniciar con Google</button>
+                                <button type="button" class="btn btn-outline-primary btn-block"><i class="fab fa-facebook"></i> Iniciar con Facebook</button>
+                            </div>
+                        </form>
+                        
+                        <div class="mt-3 text-center">
+                            <p >¿No tienes una cuenta? <a href="#">Registrarse</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <main class="moto-section">
+    <section>
+      <div class="container-fluid col-xxl-8 px-4 py-4">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../Images/Designer (35).jpeg" class="rounded d-block w-100 object-fit-cover img-pareja-moto" alt="personas-en-moto">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3 text-white">CONOCE NUESTRAS OPCIONES Y ASEGURA TU MOTO CON LA
+              QUE MAS TE CONVENGA</h1>
+            <p class="lead"> Con nuestra experiencia, hemos desarrollla distintos seguros a la medida de tus necesidades
+              y bolsillo. Sabemos que cuando tenes una moto pueden pasar muchas cosas y queremos acompañarte en cada una
+              de ellas, mira nuestras opciones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+        <h2 class="display-3 text-center">Tipos de Seguro</h2>
+      <div class="row g-4 my-2">
+        <div class="col-12 col-md-4">
+          <div class="card h-100 mx-auto mb-2 card-bg btn">
+            <div class="card-body d-flex justify-content-center align-items-center flex-column">
+              <div class="card-header">
+                <h5 class="card-title text-light">Base</h5>
+              </div>
+              <p class="card-text text-start"> Si buscas un seguro accesible pero con el que siempre puedas contar esta es tu mejor
+                opcion. Estaras cubierto contra terceros y contaras con asistencia legal telefonica</p>
+            </div>
+            <div class="card-footer">
+              <a href="./error404.html" class="btn btn-color"> + INFORMACION</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 mx-auto mb-2 card-bg btn">
+            <div class="card-body d-flex justify-content-center align-items-center flex-column">
+              <div class="card-header">
+              <h5 class="card-title text-light">Ampliado</h5>
+              </div>
+              <p class="card-text text-start">Pensamos en todos, esta opcion incluye terceros + una cobertura con franquicia en caso
+                de choques, roturas de parabrisas y robos para que te sientas acompañado.</p>
+            </div>
+            <div class="card-footer"> 
+              <a href="./error404.html" class="btn btn-color"> + INFORMACION</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 mx-auto mb-2 card-bg btn">
+            <div class="card-body d-flex justify-content-center align-items-center flex-column">
+              <div class="card-header">
+              <h5 class="card-title text-light">Total</h5>
+            </div>
+              <p class="card-text text-start"> Para vos que estas buscando mayor tranquilidad, conta con nosotros. Con esta opcion
+                sumale a la opcion uno y dos, proteccion ante robos y hurtos en la via publica e incluso en tu propia
+                casa.</p>
+            </div>
+            <div class="card-footer"> 
+              <a href="./error404.html" class="btn btn-color"> + INFORMACION</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-white">
+      <div class="container px-4 py-5">
+        <div class="row">
+          <div class="col-12 col-md-3"> 
+            <div class="d-flex flex-column align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-1-circle"
+                viewBox="0 0 16 16">
+                <path
+                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z" />
+              </svg>
+              <h2 class="fw-normal">COTIZA</h2>
+              <p>Descargate nuestra APP o contacta uno de nuestros asesores y conoce nuestras increibles ofertas.</p>
+            </div>          
+          </div>
+          <div class="col-12 col-md-1 d-flex justify-content-center align-items-center svg-disable">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+              class="bi bi-chevron-compact-right rotate-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671" />
+            </svg>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="d-flex flex-column align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-2-circle"
+                viewBox="0 0 16 16">
+                <path
+                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306" />
+              </svg>
+              <h2 class="fw-normal">COMPARA</h2>
+              <p>Conoce las distintas opciones que tenemos para ofrecerte y elegi la opcion que mas se ajuste a tu medida
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-1 d-flex justify-content-center align-items-center svg-disable">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+              class="bi bi-chevron-compact-right rotate-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671" />
+            </svg>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="d-flex flex-column align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-3-circle"
+                viewBox="0 0 16 16">
+                <path
+                  d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318" />
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
+              </svg>
+              <h2 class="fw-normal">CONTRATA</h2>
+              <p>Con un solo click y sin moverte de tu casa contrata y empeza a disfrutar que del resto nos ocupamos
+                nosotros.</p>
+            </div>
+          </div>
+        </div>
+  
+    </section>
+    <section class="bg-white pb-2 my-5 acord-bg">
+      <section class="container my-5">
+        <div class="row">
+            <div class="col">
+                <h2 class="text-center mt-5 display-5">COBERTURAS</h2>
+                <div class="accordion mt-3" id="accordionInsurance">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Seguro de Responsabilidad Civil
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionInsurance">
+                            <div class="accordion-body">
+                                <p>Este seguro cubre los daños a terceros en caso de accidente donde la motocicleta sea responsable, incluyendo lesiones corporales y daños materiales.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Cobertura contra Robo e Incendio
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionInsurance">
+                            <div class="accordion-body">
+                                <p>Esta cobertura protege tu moto contra el robo y los daños causados por incendio, ofreciendo tranquilidad adicional en caso de eventos no deseados.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Cobertura de Daños Propios
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionInsurance">
+                            <div class="accordion-body">
+                                <p>Esta cobertura te brinda protección contra los daños sufridos por tu propia motocicleta en caso de accidentes, colisiones o vandalismo, incluso si eres el responsable.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Asistencia en Viaje
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionInsurance">
+                            <div class="accordion-body">
+                                <p>Esta cobertura ofrece asistencia en carretera para tu motocicleta, incluyendo servicios como remolque, cambio de neumáticos, asistencia en caso de quedarse sin gasolina, y más.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </section>
+    
+    <section class="container celular-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="text-center text-light my-4">Servicio totalmente online con nuestra App</h4>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex flex-column align-items-center h-100 justify-content-center">
+              <img src="../Images/logo_app-store.png" class="mt-3 img-service" alt="imagen-app-store">
+              <img src="../Images/logo_google-play.png" class="mt-3 img-service" alt="imagen-google-play">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div>
+              <img src="../Images/celular.png" class="img-fluid my-3 img-celular" alt="imagen-celular">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+  </main>
+  <footer class="footer-bg mt-5">
+    <section class="container py-3">
+        <div class="row">
+            <div class="col-12 col-md-3 mt-3 media-footer">
+                <h2 class="text-light">Seguro del Norte</h2>
+                <ul class="d-flex list-unstyled">
+                    <li class="p-2">
+                      <a
+                        href="https://www.facebook.com/"
+                        title="Facebook"
+                        ><i class="fa-brands fa-facebook icon-color"></i></svg></a>
+                    </li>
+                    <li class="p-2">
+                      <a
+                        href="https://www.instagram.com/"
+                        title="Instagram"
+                        ><i class="fa-brands fa-instagram icon-color"></i></a>
+                    </li>
+                    <li class="p-2">
+                      <a href="https://www.linkedin.com/"
+                        title="LinkedIn"><i class="fa-brands fa-linkedin icon-color"></i></a>
+                    </li>
+                    <li class="p-2">
+                      <a
+                        href="https://www.youtube.com/"
+                        title="YouTube"
+                        ><i class="fa-brands fa-youtube icon-color"></i></a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="col-3">
+            </div>
+            <div class="col-12 col-md-3 my-2">
+                <ul class="nav flex-column">
+                    <h4 class="nav-footer-text">Nosotros</h4>
+                    <li class="nav-item ">
+                      <a class="p-0 icon-color" href="./sobreNosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="p-0 icon-color" href="./error404.html">Blog</a>
+                    </li>
+                    <li class="nav-item m-0">
+                      <a class="p-0 icon-color" href="./error404.html">Politicas de empresa</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="col-12 col-md-3 my-2">
+                <ul class="nav flex-column">
+                    <h4 class="nav-footer-text">Contacto</h4>
+                    <li class="nav-item ">
+                      <a class="p-0 icon-color" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="p-0 icon-color" href="./error404.html">Política de privacidad</a>
+                    </li>
+                    <li class="nav-item m-0">
+                      <a class="p-0 icon-color" href="./error404.html">Terminos y condiciones</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+    </section>
+</footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+</html>

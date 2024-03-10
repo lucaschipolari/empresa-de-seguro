@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Asegura tu hogar, moto, familia y más con Seguro del Norte. Ofrecemos una amplia gama de planes de seguro diseñados para adaptarse a tus necesidades individuales.">
+  <meta name="keywords" content="seguro, hogar, moto, familia, vida, viaje, trabajo, seguridad, protección">
+  <meta name="author" content="Santiago Altamiranda, Chipolari lucas,Jose Lobo y Carla Chediac">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+  <link rel="shortcut icon" href="./Images/OIG4.png" type="image/png">
+  <link rel="stylesheet" href="./Stylesheets/complete.css">
+  <script src="https://kit.fontawesome.com/d0041885e5.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Inicio</title>
+</head>
+<body class="body-index">
+    <header>
+        <nav class="navbar navbar-expand-lg colores fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"> <img src="../Images/OIG4.png" alt="Logo"class="d-inline-block align-text-center logo-btn"></a>
+                <button class="navbar-toggler activo" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a href="#" class="activo">Inicio <span class="sp"></span></a>
+                        <a href="#opciones">¿Que aseguramos?<span class="sp"></span></a>
+                        <a href="./Pages/contacto.html">Contacto<span span class="sp"></span></a>
+                        <a href="./Pages/sobreNosotros.html">Sobre nosotros<span class="sp"></span></a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            Iniciar Sesión<span class="sp"></span>
+                        </a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#registroModal">
+                            Registrarse<span class="sp"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-bg text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registroModalLabel">Registrarse</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="./Images/Designer (40).jpeg" class="img-registrarse" alt="Imagen">
+                        </div>
+                        <div class="col-md-8">
+                            <form id="registroForm">
+                            
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="nombre" class="form-label">Nombre</label>
+                                            <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="usuario" class="form-label">Usuario</label>
+                                            <input type="text" class="form-control" id="usuario" placeholder="Usuario" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Correo Electrónico</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Correo Electrónico" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="apellido" class="form-label">Apellido</label>
+                                            <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="password" class="form-label">Contraseña</label>
+                                            <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+                                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirmar Contraseña" required>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-color">Registrarse</button>
+                                </div>
+                            </form>
+                            <div class="mt-3 text-center">
+                                <p>¿Ya tienes una cuenta? <a href="#loginModal" data-bs-toggle="modal" class="text-primary" data-bs-dismiss="modal">Iniciar Sesión</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-bg text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Inicio de Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+          
+                <div class="modal-body">
+                    <div class="row p-2">
+                        
+                        <div class="col-lg-6 d-flex align-items-center bg-img"></div>
+                        
+                        <div class="col-lg-6">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Correo Electrónico" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="remember">
+                                    <label class="form-check-label" for="remember">Recordar</label>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-color">Iniciar Sesión</button>
+                                </div>
+                                
+                                <div class="mt-3 text-center">
+                                    <button type="button" class="btn btn-outline-danger btn-block"><i class="fab fa-google"></i> Iniciar con Google</button>
+                                    <button type="button" class="btn btn-outline-primary btn-block"><i class="fab fa-facebook"></i> Iniciar con Facebook</button>
+                                </div>
+                            </form>
+                            
+                            <div class="mt-3 text-center">
+                                <p >¿No tienes una cuenta? <a href="#">Registrarse</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-carousel" class="carousel slide">
+        <div class="carousel-indicators" id="opciones">
+            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../Images/casa.png" class="d-block w-100 carousel-images" alt="imagen-hogar">
+                <div class="carousel-caption top-0 mt-5">
+                    <div class="text-center mt-5">
+                        <h5 class="display-1">Seguro para tu <span>hogar</span></h5>
+                        <p>Nos dedicamos plenamente a proteger los que más aprecias</p>
+                        <a href="./Pages/hogar.html"><button class="btn btn-primary btn-color">Más info</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item bg-carousel">
+                <img src="../Images/motofinal.png" class="d-block w-100 carousel-images" alt="imagen-moto">
+                <div class="carousel-caption top-0 mt-5">
+                    <div class="text-center mt-5">
+                        <h5 class="display-1">Seguro para tu <span>moto</span></h5>
+                        <p>Nos dedicamos plenamente a proteger los que más aprecias</p>
+                        <a href="./Pages/moto.html"><button class="btn btn-primary btn-color">Más info</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item bg-dark">
+                <img src="../Images/familia.png" class="d-block w-100 carousel-images" alt="imagen-familia">
+                <div class="carousel-caption top-0 mt-5">
+                    <div class="text-center mt-5">
+                        <h5 class="display-1">Seguro para tu <span>familia</span></h5>
+                        <p>Nos dedicamos plenamente a proteger los que más aprecias</p>
+                        <a href="./Pages/error404.html"><button class="btn btn-primary btn-color">Más info</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#main-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <section class="my-5">
+        <h2 class="text-center text-light display-3 my-5">¿Que estás buscando asegurar?</h2>
+        <div class="container my-5">
+            <div class="row g-5">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="./Pages/hogar.html">
+                        <div class="card card-bg btn">
+                            <div class="card-body text-light d-flex justify-content-center align-items-center flex-column">
+                                <h5 class="card-title"><i class="fa-solid fa-house fa-2xl"></i></h5>
+                                <p class="mt-3 mb-0">Hogar</p>      
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="./Pages/moto.html">
+                        <div class="card card-bg btn">
+                            <div class="card-body text-light d-flex justify-content-center align-items-center flex-column">
+                                <h5 class="card-title"><i class="fa-solid fa-motorcycle fa-2xl"></i></h5>
+                                <p class="mt-3 mb-0">Moto</p>
+                            </div>
+                        </div>
+                    </a> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="./Pages/error404.html">
+                        <div class="card card-bg btn">
+                            <div class="card-body text-light d-flex justify-content-center align-items-center flex-column">
+                                <h5 class="card-title"><i class="fa-solid fa-bicycle fa-2xl"></i></h5>
+                                <p class="mt-3 mb-0">Bicicleta</p>
+                            </div>
+                        </div>
+                        </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="./Pages/error404.html">
+                    <div class="card card-bg btn">
+                        <div class="card-body text-light d-flex justify-content-center align-items-center flex-column">
+                            <h5 class="card-title"><i class="fa-solid fa-heart fa-2xl"></i></h5>
+                            <p class="mt-3 mb-0">Vida</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="./Pages/error404.html">
+                    
+                    <div class="card card-bg btn">
+                        <div class="card-body text-light d-flex justify-content-center align-items-center flex-column">
+                            <h5 class="card-title"><i class="fa-solid fa-plane fa-2xl"></i></h5>
+                            <p class="mt-3 mb-0">Viaje</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="./Pages/error404.html">
+
+                    <div class="card card-bg btn">
+                        <div class="card-body text-light d-flex justify-content-center align-items-center flex-column">
+                            <h5 class="card-title"><i class="fa-solid fa-briefcase fa-2xl"></i></h5>
+                            <p class="mt-3 mb-0">Trabajo</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+                <div class="text-center style-trabajamos">
+                    <h2>¿Como trabajamos?</h2>
+                    <p class="text-start">Como aseguradora, nuestro principal objetivo es ofrecerte la tranquilidad y la seguridad que necesitas en tu vida diaria. Trabajamos para protegerte ante cualquier imprevisto o riesgo que puedas enfrentar, ya sea en tu hogar, tu auto, tu salud o cualquier otro aspecto importante de tu vida.</p>
+                    <p class="text-start">Nuestro proceso es simple y efectivo: primero, evaluamos tus necesidades y riesgos específicos. Luego, te ofrecemos una variedad de planes y coberturas diseñados para adaptarse a tus circunstancias individuales. Desde protección para tu vivienda hasta seguro de vida, estamos aquí para brindarte la mejor cobertura posible.</p>
+                </div>
+        </div>
+    </section>
+
+    <section class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="d-flex justify-content-end">
+                        <button class="btn-color-static">¿Necesitas ayuda?</button>
+                    </div>
+                    </div>
+                <div class="col-6">
+                    <a href="./Pages/contacto.html">
+                        <button class="btn btn-color">Contactanos</button>
+                    </a>
+                </div>
+                <div class="col-12 text-center my-5">
+                        <p class="text-light">No esperes hasta que sea demasiado tarde. Protege lo que más importa para ti con nosotros. Contáctanos hoy mismo y permítenos ser tu socio en la protección y seguridad de tu futuro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carousel-container">
+    <div class="nuestros-clientes my-5 text-center">
+        <h3 class="text-center text-light">Experiencias de nuestros clientes</h3>
+        <div class="container">
+            <div id="carouselNuestrosClientes" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center d-none d-md-block">
+                                <div class="btn btn-color-comentario pt-3 mx-3 my-2 text-light">
+                                    <img src="https://tse2.mm.bing.net/th/id/OIG1.mw5RD0YhvVypP5iAt8cR?pid=ImgGn" alt="Usuario 1" class="img-fluid mb-2 img-thumbnail img-size">
+                                    <h5>Ezequiel A.</h5>
+                                    <p>Excelente servicio. ¡Recomendado!</p>
+                                    <p>Calificación: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i></p>
+
+                            </div>
+                                <div class="btn btn-color-comentario pt-3 mx-3 my-2 text-light">
+                                    <img src="https://tse2.mm.bing.net/th/id/OIG1.mw5RD0YhvVypP5iAt8cR?pid=ImgGn" alt="Usuario 2" class="img-fluid mb-2 img-thumbnail img-size">
+                                    <h5>Gabriel A.</h5>
+                                    <p>Muy satisfecho con la atención al cliente.</p>
+                                    <p>Calificación: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star-half-alt text-warning"></i><i class="far fa-star text-warning"></i></p>
+                                </div>
+
+                                <div class="btn btn-color-comentario pt-3 mx-3 my-2 text-light">
+                                    
+                                    <img src="https://tse2.mm.bing.net/th/id/OIG1.agtMq8SOEGI1hBL.th1R?pid=ImgGn" alt="Usuario 3" class="img-fluid mb-2 img-thumbnail img-size">
+                                    <h5>Josefina M.</h5>
+                                    <p>Buen servicio.</p>
+                                    <p>Calificación: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star-half-alt text-warning"></i><i class="far fa-star text-warning"></i></p>
+                                </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center text-light">
+                                <div class="btn btn-color-comentario pt-3 mx-3 my-2 text-light">
+                
+                                    <img src="https://tse2.mm.bing.net/th/id/OIG1.agtMq8SOEGI1hBL.th1R?pid=ImgGn" alt="Usuario 4" class="img-fluid mb-2 img-thumbnail img-size">
+                                    <h5>Laura B.</h5>
+                                    <p>Bien.</p>
+                                    <p>Calificación: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-star text-warning"></i></p>
+                                </div>
+
+                                <div class="btn btn-color-comentario pt-3 mx-3 my-2 text-light">
+                                    <img src="https://tse2.mm.bing.net/th/id/OIG1.agtMq8SOEGI1hBL.th1R?pid=ImgGn" alt="Usuario 5" class="img-fluid mb-2 img-thumbnail img-size">
+                                    <h5>Melina</h5>
+                                    <p>God.</p>
+                                    <p>Calificación: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star-half-alt text-warning"></i><i class="far fa-star text-warning"></i></p>
+                                </div>
+                            
+                               
+                            <div class="btn btn-color-comentario pt-3 mx-3 my-2 text-light">
+                                <img src="https://tse2.mm.bing.net/th/id/OIG1.mw5RD0YhvVypP5iAt8cR?pid=ImgGn" alt="Usuario 6" class="img-fluid mb-2 img-thumbnail img-size">
+                                <h5>Nahuel A.</h5>
+                                <p>Buen seguro, Recomendado.</p>
+                                <p>Calificación: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star-half-alt text-warning"></i><i class="far fa-star text-warning"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselNuestrosClientes" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Atrás</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselNuestrosClientes" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+            <div id="carouselClientesMinSize" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center d-md-none">
+                                <div class="btn btn-color-comentario pt-3 mx-3 my-2 text-light">
+                                    <img src="https://tse2.mm.bing.net/th/id/OIG1.mw5RD0YhvVypP5iAt8cR?pid=ImgGn" alt="Usuario 1" class="img-fluid mb-2 img-thumbnail img-size">
+                                    <h5>Ezequiel A.</h5>
+                                    <p>Excelente servicio. ¡Recomendado!</p>
+                                    <p>Calificación: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i></p>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center ">
+                            <div class="btn btn-color-comentario pt-3 mx-3 my-2 text-light">
+                                <img src="https://tse2.mm.bing.net/th/id/OIG1.mw5RD0YhvVypP5iAt8cR?pid=ImgGn" alt="Usuario 2" class="img-fluid mb-2 img-thumbnail img-size">
+                                <h5>Gabriel A.</h5>
+                                <p>Muy satisfecho con la atención al cliente.</p>
+                                <p>Calificación: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star-half-alt text-warning"></i><i class="far fa-star text-warning"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center text-light">
+                                <div class="btn btn-color-comentario pt-3 mx-3 my-2 text-light">
+                                    <img src="https://tse2.mm.bing.net/th/id/OIG1.agtMq8SOEGI1hBL.th1R?pid=ImgGn" alt="Usuario 4" class="img-fluid mb-2 img-thumbnail img-size">
+                                    <h5>Laura B.</h5>
+                                    <p>Bien.</p>
+                                    <p>Calificación: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-star text-warning"></i></p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="btn btn-color-comentario pt-3 mx-3 my-2 text-light">
+                            <img src="https://tse2.mm.bing.net/th/id/OIG1.agtMq8SOEGI1hBL.th1R?pid=ImgGn" alt="Usuario 5" class="img-fluid mb-2 img-thumbnail img-size">
+                            <h5>Melina</h5>
+                            <p>God.</p>
+                            <p>Calificación: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star-half-alt text-warning"></i><i class="far fa-star text-warning"></i></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="btn btn-color-comentario pt-3 mx-3 my-2 text-light">
+                            <img src="https://tse2.mm.bing.net/th/id/OIG1.mw5RD0YhvVypP5iAt8cR?pid=ImgGn" alt="Usuario 6" class="img-fluid mb-2 img-thumbnail img-size">
+                            <h5>Nahuel A.</h5>
+                            <p>Buen seguro, Recomendado.</p>
+                            <p>Calificación: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star-half-alt text-warning"></i><i class="far fa-star text-warning"></i></p>
+                        </div>
+                    </div>   
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselClientesMinSize" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Atrás</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselClientesMinSize" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+            </div>
+            </div>
+    </div>
+</section>   
+
+<section class="container celular-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="text-center text-light my-4">Servicio totalmente online con nuestra App</h4>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex flex-column align-items-center h-100 justify-content-center">
+                        <img src="./Images/logo_app-store.png" class="mt-3 img-service" alt="img-app-store">
+                        <img src="./Images/logo_google-play.png" class="mt-3 img-service" alt="img-play-store">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <img src="./Images/celular.png" class="img-fluid my-3 img-celular" alt="img-celular">
+                    </div>                
+                </div>
+            </div>            
+        </div>
+    </section>
+    
+
+    <footer class="footer-bg mt-5">
+        <section class="container py-3">
+            <div class="row">
+                <div class="col-12 col-md-3 mt-3 media-footer">
+                    <h2 class="text-light">Seguro del Norte</h2>
+                    <ul class="d-flex list-unstyled">
+                        <li class="p-2">
+                          <a
+                            href="https://www.facebook.com/"
+                            title="Facebook"
+                            ><i class="fa-brands fa-facebook icon-color"></i></svg></a>
+                        </li>
+                        <li class="p-2">
+                          <a
+                            href="https://www.instagram.com/"
+                            title="Instagram"
+                            ><i class="fa-brands fa-instagram icon-color"></i></a>
+                        </li>
+                        <li class="p-2">
+                          <a href="https://www.linkedin.com/"
+                            title="LinkedIn"><i class="fa-brands fa-linkedin icon-color"></i></a>
+                        </li>
+                        <li class="p-2">
+                          <a
+                            href="https://www.youtube.com/"
+                            title="YouTube"
+                            ><i class="fa-brands fa-youtube icon-color"></i></a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="col-3">
+                </div>
+                <div class="col-12 col-md-3 my-2">
+                    <ul class="nav flex-column">
+                        <h4 class="nav-footer-text">Nosotros</h4>
+                        <li class="nav-item ">
+                          <a class="p-0 icon-color" href="./Pages/sobreNosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="p-0 icon-color" href="./Pages/error404.html">Blog</a>
+                        </li>
+                        <li class="nav-item m-0">
+                          <a class="p-0 icon-color" href="./Pages/error404.html">Politicas de empresa</a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="col-12 col-md-3 my-2">
+                    <ul class="nav flex-column">
+                        <h4 class="nav-footer-text">Contacto</h4>
+                        <li class="nav-item ">
+                          <a class="p-0 icon-color" href="./Pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="p-0 icon-color" href="./Pages/error404.html">Política de privacidad</a>
+                        </li>
+                        <li class="nav-item m-0">
+                          <a class="p-0 icon-color" href="./Pages/error404.html">Terminos y condiciones</a>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+</body>
+</html>
