@@ -135,18 +135,12 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  html, body {
-    height: 100%;
-  }
+
   
   main {
     min-height: calc(100vh - 175px);
   }
-  footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
+
   
   .blur{
     background-color: var(--background-color);
@@ -401,12 +395,38 @@
       color: #212529;
   }
   
-  footer {
-      font-family: var(--texto-font);
+  html {
+    height: 100%;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1 0 auto;
   }
   
   .footer-bg {
-      background-color: var(--color-footer);
+    flex-shrink: 0;
+    padding: 20px;
+    background-color: var(--color-footer);
+    font-family: var(--texto-font);
+  }
+  
+  @media (max-width: 576px) {
+    .media-footer {
+      display: flex;
+      flex-direction: column;
+    }
   }
   
   .icon-color {
